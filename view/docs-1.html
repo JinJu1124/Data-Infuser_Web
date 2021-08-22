@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--폰트 적용-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <!--동적애니매이션 움직임-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--css 적용-->
+    <link href="../public/stylesheets/docs-1.css" rel="stylesheet">
+
+    <title>Data Infuser</title>
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light shadow" style="background-color: white;">
+            <div class="container">
+                <a class="navbar-brand" href="main.html">
+                    <img src="../public/images/01.main/01.logo.png" alt="" width="130" height="36"
+                        style="margin-bottom: 17px;"></a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="flase" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact_us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="what_is_datainfuser.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Docs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="docs-1.html">What is Data Infuser?</a></li>
+                                <li><a class=" dropdown-item" href="docs-2">How to use?</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="getstarted-button" style="margin-left: 10px;">
+                            <a href="https://github.com/Data-Infuser" target="_blank">
+                                <button type="button" class="btn btn-dark" style="width: 170px; height:40px;border:0; outline:0; border-radius: 12px; background: 
+                                    #b5223e;">Get Started</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fulid">
+            <div class="docs-banner">
+                <div class="docs_title p-5 text-center" data-aos="zoom-out" data-aos-duration="1700">
+                    <h2 class="banner_title mb-4" id="font-red">What is Data Infuser?</h2>
+                    <p class="banner_text">Data Infuser is an open-source (GNU GPL v3.0 applied) API generator <br>
+                        that converts raw data such as files (CSV, xlsx, etc.) and DBMS to REST APIs.<br>
+                        This page describes the architecture of Data Infuser.<br>
+                        You can see how Data Infuser works through its architecture.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="docs1-architecture p-5 mt-5">
+            <div class="docs1-top text-center">
+                <h3><strong>Data Infuser Architecture</strong></h3>
+                <img class="mt-5" style="width:68%" src="../public/images/03.docs/architecture_capture.JPG">
+            </div>
+
+            <div class="docs1-content">
+                <div class="desingerloader">
+                <div class="container docs1-content_text p-5">
+                    <div class="contents_1-title">
+                        <h4><strong>API Generation</strong></h4>
+                    </div>
+                    <div class="d-flex flex-wrap mt-4">
+                        <div class="text_left col-sm-6">
+                            <h4><strong>Designer</strong></h4>
+                            <p>Designer is a service that manages raw data and creates APIs. Within the user
+                                interface,
+                                a user can define API
+                                settings such as provision items, API call specifications, user parameters, and API
+                                operation methods. If the user
+                                requests API specification, the Designer forms an OAS 3.0-based API specification
+                                from
+                                metadata stored in the
+                                metadata DB. The user can also set the loading cycle so that the Loader would
+                                automatically update the API. When all
+                                the steps are completed, the user can finally deploy API.</p>
+                        </div>
+
+                        <div class="text_right col-sm-6">
+                            <h4><strong>Loader</strong></h4>
+                            <p>Loader is a service that extracts data from raw data, analyzes data, and stores data.
+                                When the user uploads raw data
+                                (files or DBMS), the Designer calls the Loader through the memory DB. Then, the
+                                Loader extracts data from raw data
+                                and analyzes it through the job queue. Next, the Loader defines schemas of the data,
+                                creates schema tables, and
+                                stores tables in the metadata DB. Furthermore, the Loader can update processed data
+                                according to the loading cycle
+                                set by the user.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contents_2-img text-center">
+                    <img src="../public/images/03.docs/designerloader.JPG" style="width:80%">
+                </div>
+            </div>
+
+            <div class="executor mt-5">
+                <div class="container docs1-content_text p-5">
+                    <div class="contents_2-title">
+                        <h4><strong>API Service Provider</strong></h4>
+                    </div>
+                    <div class="d-flex flex-wrap mt-4">
+                        <div class="text_left col-sm-6">
+                            <h4><strong>Gateway</strong></h4>
+                            <p>Gateway is a service that reads a user's API request. 
+                                Gateway contacts the Authorizer to determine if the user is a
+                            verified user.</p>
+
+                            <h4><strong>Authorizer</strong></h4>
+                            <p>Authorizer is a service that verifies a user's validity by checking the Authentication DB. If the user information
+                                and the authentication keys match those in the DB, Authorizer determines the user as a verified user. Authorizer
+                                also creates statistical data from this request and stores it in the logs database. Furthermore, Authorizer stores
+                                generated or modified authentication key information in Authentication DB.</p>
+                        </div>
+
+                        <div class="text_right col-sm-6">
+                            <h4><strong>Executor</strong></h4>
+                            <p>Executor is a service that executes the user's request and brings the necessary data. It extracts metadata from the
+                                user's request information and queries it in the Metadata DB. Subsequently, Executor uses DB queries to query the
+                                API in the Open Data DB. When it finds the necessary information, it delivers the information to the Gateway.
+                                Gateway returns the API to the user in a JSON/XML format.</p>
+                        </div>
+                        <p class="mt-5">The three services mentioned above come together to form an API service</p>
+                    </div>
+
+                </div>
+                <div class="contents_1-img text-center">
+                    <img src="../public/images/03.docs/executor.JPG" style="width:80%">
+                </div>
+            </div>
+            
+
+            <div class="manager mt-5">
+                <div class="container docs1-content_text p-5">
+                    <div class="contents_3-title">
+                        <h4><strong>API Service Management</strong></h4>
+                    </div>
+                    <div class="contents_3-text mt-4">
+                        <h4><strong>Manager</strong></h4>
+                        <p>Manager is a GUI-based management service that allows the system admin to check the status of generated
+                            or deployed
+                            APIs. System Admin can administer deployed API's status and logs via Manager. Manager also offers
+                            statistical data
+                            through multidimensional analysis and statistical queries. As a result, the administrator can visually
+                            see the
+                            status of the API, traffic changes, and the number of traffic per API.</p>
+                    </div>
+            
+                </div>
+                <div class="contents_3-img text-center">
+                    <img src="../public/images/03.docs/manager.JPG" style="width:78%">
+                </div>
+            </div>
+            </div>
+
+            
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_section p-5">
+            <div class="container mt-3">
+                <img class="pb-3 footer_img" src="../public/images/01.main/footer_logo.png">
+                <p>Name: Prompt Technology CEO: Jonghoon Chun, Ph.D.<br>
+                    Address: Nonhyeon-ro 81-gil 12, Gangnam-gu, Seoul (Yeoksam-dong, Jo & Lee Building)<br>
+                    Contact: (t) 02-553-6441 (f) 02-553-6442 Email: promptech@promptech.co.kr</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!--동적 애니메이션 부분-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
