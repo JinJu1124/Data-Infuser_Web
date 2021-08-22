@@ -43,6 +43,14 @@ body{
 
 }
 
+.lag{
+    padding-top: 20px;
+    width: auto;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
 .text_left{
     padding-right: 5%;
 }
