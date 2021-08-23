@@ -22,18 +22,25 @@ body{
 }
 
 .contactus{
-    width: 100%;
-    height:fit-content;
+
+
     background : url("../images/03.banner/03.contact_back.png");
     background-size: cover;
     position: relative;
 }
 
 .contact-form_position{
+    width: 50%;
+    max-width: 800px;
+    min-width: 290px;
     background-color: #fff;
     margin: 0 auto;
     border-radius: 30px;
     padding: 60px;
+}
+
+.contactus_text{
+    
 }
 
 .footer_section{

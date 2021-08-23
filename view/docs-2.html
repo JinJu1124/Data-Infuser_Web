@@ -17,8 +17,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--css 적용-->
-    <link href="../public/stylesheets/contact_us.css" rel="stylesheet">
-
+    <link href="../public/stylesheets/docs-2.css" rel="stylesheet">
 
     <title>Data Infuser</title>
 
@@ -48,13 +47,13 @@
                             <a class="nav-link" aria-current="page" href="contact_us.html">Contact Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Docs
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="docs-1.html">What is Data Infuser?</a></li>
-                            <li><a class=" dropdown-item" href="docs-2.html">How to use?</a></li>
+                                <li><a class=" dropdown-item" href="docs-2.html">How to use?</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,50 +72,26 @@
 
     <main>
         <div class="container-fulid">
-            <div class="contactus p-5">
-                <div class="contactus-content p-5 text-center">
-                    <div class="contactus-title">
-                        <h1 id="font-red"><strong>Contact Us</strong></h1>
-                    </div>
-                    <div class="contactus_text mt-4">
-                        <p>Do you have any questions about Data Infuser? <br>
-                            Send us a message here. We'd love to hear from you.</p>
-                    </div>
+            <div class="docs-banner">
+                <div class="docs_title p-5 text-center" data-aos="zoom-out" data-aos-duration="1700">
+                    <h1 class="banner_title mb-4" id="font-red">How to use?</h1>
+                    <p class="banner_text">
+                        This page is the Data Infuser's User Manual. <br>
+                        The manual details how to create and manage APIs with Data Infuser.<br>
+                        Anyone who has a user account can download the PDF.
+                    </p>
                 </div>
-    
-                <div class="contact-form_position col-sm-5 mb-5 shadow">
-                    <div class="contact-form">
-                        <div class="col">
-                            <form action="">
-                                <div class="row">
-                                    <div class="col">
-                                        <label for="exampleFormControlInput1" class="form-label">First name</label>
-                                        <input type="text" class="form-control" placeholder="First name"
-                                            aria-label="First name" />
-                                    </div>
-                                    <div class="col">
-                                        <label for="exampleFormControlInput1" class="form-label">Last name</label>
-                                        <input type="text" class="form-control" placeholder="Last name"
-                                            aria-label="Last name" />
-                                    </div>
-                                </div>
-                                <div class="mb-3 pt-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Email<span
-                                            class="font-red">*</span></label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Your Email" required="" />
-                                </div>
-                                <div class="mb-3 pt-2">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Message<span
-                                            class="font-red">*</span></label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" required=""
-                                        rows="3"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-dark contact" style="width: 200px; height:40px; border:0; outline:0; border-radius: 12px; margin-top:10px; background: 
-                            #b5223e;">Submit</button>
-                            </form>
-                        </div>
+            </div>
+
+            <div class="docs-2_manual text-center p-5 mt-5 mb-5">
+                <div class="manual container shadow col-sm-4">
+                    <div class="manual-title">
+                        <h1>Data Infuser manual</h1>
+                        <p>User's manual - how to use Data Infuser</p>
                     </div>
+                    <a href="../public/manual/data_infuser_manual.pdf">
+                    <button type="button" class="download p-3 btn mt-3">
+                    PDF</button></a>
                 </div>
             </div>
         </div>
@@ -125,12 +100,12 @@
     <footer>
         <div class="footer_section p-5">
             <div class="container mt-3">
-            <img class="pb-3 footer_img" src="../public/images/01.main/footer_logo.png">
-            <p>Name: Prompt Technology CEO: Jonghoon Chun, Ph.D.<br>
-                Address: Nonhyeon-ro 81-gil 12, Gangnam-gu, Seoul (Yeoksam-dong, Jo & Lee Building)<br>
-                Contact: (t) 02-553-6441 (f) 02-553-6442 Email: promptech@promptech.co.kr</p>
+                <img class="pb-3 footer_img" src="../public/images/01.main/footer_logo.png">
+                <p>Name: Prompt Technology CEO: Jonghoon Chun, Ph.D.<br>
+                    Address: Nonhyeon-ro 81-gil 12, Gangnam-gu, Seoul (Yeoksam-dong, Jo & Lee Building)<br>
+                    Contact: (t) 02-553-6441 (f) 02-553-6442 Email: promptech@promptech.co.kr</p>
+            </div>
         </div>
-    </div>
     </footer>
 
 
