@@ -46,13 +46,13 @@
                             <a class="nav-link" aria-current="page" href="contact_us.html">Contact Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Docs
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="docs-1.html">What is Data Infuser?</a></li>
-                            <li><a class=" dropdown-item" href="docs-2.html">How to use?</a></li>
+                                <li><a class=" dropdown-item" href="docs-2.html">How to use?</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -87,11 +87,11 @@
                     <div class="row justify-content-md-center">
                         <div class="col-md-auto">
                             <a href="https://github.com/Data-Infuser" target="_blank">
-                            <button class="btn btn-primary p-3 shadow" id="github_button">Github ></button></a>
+                                <button class="btn btn-primary p-3 shadow" id="github_button">Github ></button></a>
                         </div>
                         <div class="col-md-auto">
                             <a href="contact_us.html">
-                            <button class="btn btn-primary p-3 shadow" id="contact_button">Contact ></button> </a>
+                                <button class="btn btn-primary p-3 shadow" id="contact_button">Contact ></button> </a>
                         </div>
                     </div>
                 </div>
@@ -111,9 +111,8 @@
 
             </div>
 
-            <div class="main-about_bg">
-            <div class="main-about container" data-aos="fade-down" data-aos-duration="1700">
-                <div class="main-about_top text-center">
+            <div class="main-about">
+                <div class="main-about_top text-center" data-aos="fade-down" data-aos-duration="1700">
                     <div class="main-about_title mb-4">
                         <h2 id="bold">About</h2>
                     </div>
@@ -122,7 +121,10 @@
                     </div>
                 </div>
 
-                <div class="main-about_context p-5">
+            </div>
+
+            <div class="main-about_bg">
+                <div class="main-about_context container p-5" data-aos="fade-down" data-aos-duration="1700">
                     <div class="row justify-content-md-center align-items-center">
                         <div class="main-about_text col-sm-5 text-center">
                             <img class="about_img" src="../public/images/01.main/04.about.png">
@@ -140,33 +142,47 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-            <div class="main-use container p-5" data-aos="fade-down" data-aos-duration="1700">
-                <div class="main-use_title text-center mt-5">
-                    <h2><strong>Why you should use <span id="font-red">Data Infuser</span></strong></h2>
-                </div>
-                <div class="main-use_contents mt-5">
-                    <div class="row justify-content-md-center">
-                        <div class="use_contents col-sm-4 text-center">
-                            <img class="main-use_icon mb-5" src="../public/images/01.main/05.icon1.png">
-                            <h4>Open-source</h4>
-                            <p>Free software environment for <br>
-                                API creation and management </p>
-                        </div>
+                <!-- <div class="container align-items-center" style="display: flex; flex-wrap: wrap;">
+                    <div style="width: 40%; margin-left: 10%;">
+                        <img class="about_img" src="../public/images/01.main/04.about.png" style="width: 100%; min-width: 300px;">
+                    </div>
+                    <div style="width:50%">
+                        <p style="width: 100%; min-width: 200px;">Data Infuser is an open-source API generator that transforms files
+                            or DBMS into REST API. By Data Infuser, you can easily develop API without coding and
+                            administer and distribute your API. <br>
+                            <br>
+                            In addition, Data Infuser guarantees high accessibility, light and rapid performance,
+                            and solid security. Currently, Data Infuser is adopted by many data-related businesses
+                            and has endless possibilities to be used in the future.
+                        </p>
+                    </div>
+                </div> -->
+                <div class="main-use container p-5" data-aos="fade-down" data-aos-duration="1700">
+                    <div class="main-use_title text-center mt-5">
+                        <h2><strong>Why you should use <span id="font-red">Data Infuser</span></strong></h2>
+                    </div>
+                    <div class="main-use_contents mt-5">
+                        <div class="row justify-content-md-center">
+                            <div class="use_contents col-sm-4 text-center">
+                                <img class="main-use_icon mb-5" src="../public/images/01.main/05.icon1.png">
+                                <h4>Open-source</h4>
+                                <p>Free software environment for <br>
+                                    API creation and management </p>
+                            </div>
 
-                        <div class="use_contents col-sm-4 text-center">
-                            <img class="main-use_icon mb-5" src="../public/images/01.main/06.icon2.png">
-                            <h4>Easy to use</h4>
-                            <p>FInstantly produces a fully <br>
-                                documented REST API
-                        </div>
+                            <div class="use_contents col-sm-4 text-center">
+                                <img class="main-use_icon mb-5" src="../public/images/01.main/06.icon2.png">
+                                <h4>Easy to use</h4>
+                                <p>FInstantly produces a fully <br>
+                                    documented REST API
+                            </div>
 
-                        <div class="use_contents col-sm-4 text-center">
-                            <img class="main-use_icon mb-5" src="../public/images/01.main/07.icon3.png">
-                            <h4>Convenient Management</h4>
-                            <p>Monitors your API <br>
-                                with the Manager tool
+                            <div class="use_contents col-sm-4 text-center">
+                                <img class="main-use_icon mb-5" src="../public/images/01.main/07.icon3.png">
+                                <h4>Convenient Management</h4>
+                                <p>Monitors your API <br>
+                                    with the Manager tool
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -187,111 +203,111 @@
 
                 <div class="main-company_imgs">
 
-                        <div class="row align-items-center row-cols-2 row-cols-lg-5 g-lg-4">
-                            <div data-aos="flip-left" data-aos-duration="1000">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center01.png">
-                                    </div>
+                    <div class="row align-items-center row-cols-2 row-cols-lg-5 g-lg-4">
+                        <div data-aos="flip-left" data-aos-duration="1000">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center01.png">
                                 </div>
                             </div>
+                        </div>
 
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center02.png"
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center02.png"
                                         style="max-width: 70%; height: 20%; margin: 7%;">
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center03.png"
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center03.png"
                                         style="max-width: 70%; height: 16%; margin: 7%;">
 
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center04.png"
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center04.png"
                                         style="max-width: 66%; height: 3%; margin: 5%;">
 
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center05.png"
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center05.png"
                                         style="max-width: 70%; height: 35%; margin: 13%;">
 
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center06.png"
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center06.png"
                                         style="max-width: 80%; height: 100%; margin: 10%;">
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center07.png"
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center07.png"
                                         style="max-width: 65%; height: 30%; margin: 7%;">
 
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center08.png">
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center08.png">
 
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center09.png">
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center09.png">
 
-                                    </div>
                                 </div>
                             </div>
-                            <div data-aos="flip-left" data-aos-duration="1400">
-                                <div class="col">
-                                    <div class="p-3 text-center shadow" id="company_image">
-                                        <img id="c-img" src="../public/images/01.main/center10.png">
+                        </div>
+                        <div data-aos="flip-left" data-aos-duration="1400">
+                            <div class="col">
+                                <div class="p-3 text-center shadow" id="company_image">
+                                    <img id="c-img" src="../public/images/01.main/center10.png">
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
             </div>
 
-            <div class="main-contact p-5 mt-5">
-                <div class="main-contact_contents container p-5" >
-                    <div class="row justify-content-md-evenly" data-aos="fade-left" data-aos-duration="1700">
-                        <div class="col-sm-3">
-                            <div class="main-contact_title">
+            <div class="main-contact p-5 mt-5"> <!--백그라운드-->
+                <div class="main-contact_contents container" data-aos="fade-left" data-aos-duration="1700" 
+                style="display: flex; flex-wrap: wrap; "> <!--컨테이너-->
+                        <div class="main-contact_title">
+                            <div class="">
                                 <h2 id="font-red"><strong>Contact Us</strong></h2>
                                 <br>
                                 <p>Do you have any questions about Data Infuser?<br>
@@ -299,7 +315,8 @@
                                     We'd love to hear from you.</p>
                             </div>
                         </div>
-                        <div class="col-sm-4" id="form-width" >
+                        <div class="contact_form ">
+                        <div class="" id="form-width">
                             <form action="">
                                 <div class="row">
                                     <div class="col">
@@ -330,7 +347,7 @@
                             </form>
 
                         </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -339,12 +356,12 @@
     <footer>
         <div class="footer_section p-5">
             <div class="container mt-3">
-            <img class="pb-3 footer_img" src="../public/images/01.main/footer_logo.png">
-            <p>Name: Prompt Technology CEO: Jonghoon Chun, Ph.D.<br>
-                Address: Nonhyeon-ro 81-gil 12, Gangnam-gu, Seoul (Yeoksam-dong, Jo & Lee Building)<br>
-                Contact: (t) 02-553-6441 (f) 02-553-6442 Email: promptech@promptech.co.kr</p>
+                <img class="pb-3 footer_img" src="../public/images/01.main/footer_logo.png">
+                <p>Name: Prompt Technology CEO: Jonghoon Chun, Ph.D.<br>
+                    Address: Nonhyeon-ro 81-gil 12, Gangnam-gu, Seoul (Yeoksam-dong, Jo & Lee Building)<br>
+                    Contact: (t) 02-553-6441 (f) 02-553-6442 Email: promptech@promptech.co.kr</p>
+            </div>
         </div>
-    </div>
     </footer>
 
 

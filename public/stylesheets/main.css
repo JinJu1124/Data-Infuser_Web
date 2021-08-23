@@ -8,6 +8,7 @@
     }
 
 
+
 }
 
 
@@ -21,16 +22,13 @@
         margin-top: -200px;
     }
 
-    .about_img{
-        min-width: 70%;
-    }
-
     
     #c-img{
        min-width: 80%;
        min-height: 10%;
         
     }
+
 
 }
 
@@ -62,7 +60,6 @@ body{
     position: relative;
     background-size: cover;
 }
-
 
 
 
@@ -143,7 +140,7 @@ body{
 
     background-position: contain;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 120%;
 
 
 }
@@ -151,14 +148,16 @@ body{
 .about_img{
     width: 100%;
     max-width: 500px;
-    min-width:300px;
+    min-width: 300px;
+    object-fit: cover;
 
 }
 
 .about_text{
     width: 100%;
     max-width: 500px;
-    min-width:300px;
+    min-width:250px;
+
 }
 
 .main-use_icon{
@@ -176,6 +175,24 @@ body{
     margin-top: 80px;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.main-contact_contents{
+    width: 100%;
+    padding:5%;
+}
+
+.main-contact_title{
+    width: 40%;
+    margin-right: 10%;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.contact_form{
+    width: 50%;
+    max-width: 600px;
+    min-width: 300px;
 }
 
 .footer_section{
