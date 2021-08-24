@@ -142,21 +142,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="container align-items-center" style="display: flex; flex-wrap: wrap;">
-                    <div style="width: 40%; margin-left: 10%;">
-                        <img class="about_img" src="../public/images/01.main/04.about.png" style="width: 100%; min-width: 300px;">
-                    </div>
-                    <div style="width:50%">
-                        <p style="width: 100%; min-width: 200px;">Data Infuser is an open-source API generator that transforms files
-                            or DBMS into REST API. By Data Infuser, you can easily develop API without coding and
-                            administer and distribute your API. <br>
-                            <br>
-                            In addition, Data Infuser guarantees high accessibility, light and rapid performance,
-                            and solid security. Currently, Data Infuser is adopted by many data-related businesses
-                            and has endless possibilities to be used in the future.
-                        </p>
-                    </div>
-                </div> -->
                 <div class="main-use container p-5" data-aos="fade-down" data-aos-duration="1700">
                     <div class="main-use_title text-center mt-5">
                         <h2><strong>Why you should use <span id="font-red">Data Infuser</span></strong></h2>
@@ -317,30 +302,31 @@
                         </div>
                         <div class="contact_form ">
                         <div class="" id="form-width">
-                            <form action="">
+                            <form class="gform" method="POST" data-email="banggi1124@gmail.com" 
+                            action="https://script.google.com/macros/s/AKfycbyBm8xpXFd543fXMVhC5Edum9pmSS1YOu6KuHzMWg/exec">
                                 <div class="row">
                                     <div class="col">
                                         <label for="exampleFormControlInput1" class="form-label">First name</label>
                                         <input type="text" class="form-control" placeholder="First name"
-                                            aria-label="First name" />
+                                            aria-label="First name" name="name">
                                     </div>
                                     <div class="col">
                                         <label for="exampleFormControlInput1" class="form-label">Last name</label>
                                         <input type="text" class="form-control" placeholder="Last name"
-                                            aria-label="Last name" />
+                                            aria-label="Last name" >
                                     </div>
                                 </div>
                                 <div class="mb-3 pt-3">
                                     <label for="exampleFormControlInput1" class="form-label">Email<span
                                             class="font-red">*</span></label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="Your Email" required="" />
+                                        placeholder="Your Email" required="" name="email">
                                 </div>
                                 <div class="mb-3 pt-2">
                                     <label for="exampleFormControlTextarea1" class="form-label">Message<span
                                             class="font-red">*</span></label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" required=""
-                                        rows="3"></textarea>
+                                        rows="3" name="message"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-dark contact" style="width: 200px; height:40px; border:0; outline:0; border-radius: 12px; margin-top:10px; background: 
                             #b5223e;">Submit</button>
@@ -364,6 +350,10 @@
         </div>
     </footer>
 
+    <!--email 제출-->
+    <script data-cfasync="false" type="text/javascript" 
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+</script> 
 
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
