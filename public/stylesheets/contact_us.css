@@ -24,7 +24,7 @@ body{
 .contactus{
 
 
-    background : url("../images/03.banner/03.contact_back.png");
+    background : url("../images/04.banner/03.contact_back.png");
     background-size: cover;
     position: relative;
 }
@@ -39,9 +39,6 @@ body{
     padding: 60px;
 }
 
-.contactus_text{
-    
-}
 
 .footer_section{
     background: linear-gradient(
